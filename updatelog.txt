@@ -1,0 +1,83 @@
+
+      --Statement--
+	
+       Issues caused by the command »style="number_textfield"« (i do not even know what it does or did), it looks like 
+	   that the command was actually working fine on v.0.16, and then, on v.0.17, no more (quite interesting ¯\_(ツ)_/¯ ).
+	 	 
+	   Conclusion: I removed it entirely
+	 
+	   
+	
+      --Affected Lines:
+	   
+	     /CTLM/gui/main.lua:70:  
+	      then: local textfield = saveFolder_flow.add({type="textfield", name="saveFolder", style="number_textfield"});
+		  now:  local textfield = saveFolder_flow.add({type="textfield", name="saveFolder"});
+		
+	     /CTLM/gui/main.lua:79: 
+	      then: local textfield = screenshotInterval_flow.add({type="textfield", name="screenshotInterval", style="number_textfield"});
+	      now:  local textfield = screenshotInterval_flow.add({type="textfield", name="screenshotInterval"});
+		
+	     /CTLM/gui/players.lua:144: 
+	      then: local textfield = width_flow.add({type="textfield", name="textfield", style="number_textfield"});
+		  now:  local textfield = width_flow.add({type="textfield", name="textfield"});
+	   
+	     /CTLM/gui/players.lua:153:
+	      then: local textfield = height_flow.add({type="textfield", name="textfield", style="number_textfield"});
+		  now:  local textfield = height_flow.add({type="textfield", name="textfield"}); 
+		
+         /CTLM/gui/players.lua:162:
+	      then: local textfield = zoom_flow.add({type="textfield", name="textfield", style="number_textfield"});
+		  now:  local textfield = zoom_flow.add({type="textfield", name="textfield"});
+		
+	     /CTLM/gui/positions.lua:156:
+          then: local textfield = name_flow.add({type="textfield", name="textfield", style="number_textfield"});
+          now:  local textfield = name_flow.add({type="textfield", name="textfield"});		
+		
+	     /CTLM/gui/positions.lua:167:
+          then: local textfield = surface_flow.add({type="textfield", name="textfield", style="number_textfield"});
+          now:  local textfield = surface_flow.add({type="textfield", name="textfield"});		
+   
+         /CTLM/gui/positions.lua:185:
+	      then: local textfield = width_flow.add({type="textfield", name="textfield", style="number_textfield"});
+		  now:  local textfield = width_flow.add({type="textfield", name="textfield"});
+		
+	     /CTLM/gui/positions.lua:196:	
+	      then: local textfield = height_flow.add({type="textfield", name="textfield", style="number_textfield"});
+		  now:  local textfield = height_flow.add({type="textfield", name="textfield"});
+
+         /CTLM/gui/positions.lua:207:	
+	      then: local textfield = zoom_flow.add({type="textfield", name="textfield", style="number_textfield"});
+          now:  local textfield = zoom_flow.add({type="textfield", name="textfield"}); 
+
+         /CTLM/gui/positions.lua:218:	
+	      then: local textfield = positionX_flow.add({type="textfield", name="textfield", style="number_textfield"});
+		  now:  local textfield = positionX_flow.add({type="textfield", name="textfield"});
+
+         /CTLM/gui/positions.lua:229:	
+	      then: local textfield = positionY_flow.add({type="textfield", name="textfield", style="number_textfield"});
+		  now:  local textfield = positionY_flow.add({type="textfield", name="textfield"});
+      --
+	
+	  --Log.Error--
+	
+       The mod Credo Time Lapse Mod caused a non-recoverable error.
+       Please report this error to the mod author.
+
+        Error while running event CredoTimeLapseMod::on_gui_click (ID 1)
+        Unknown style number_textfield
+        stack traceback:
+	       __CredoTimeLapseMod__/CTLM/gui/main.lua:70: in function 'CTLM_settings_main_open'
+	       __CredoTimeLapseMod__/CTLM/gui.lua:98: in function 'click'
+	       __CredoTimeLapseMod__/CTLM/main.lua:83: in function <__CredoTimeLapseMod__/CTLM/main.lua:81>
+        stack traceback:
+	     [C]: in function 'add'
+	      __CredoTimeLapseMod__/CTLM/gui/main.lua:70: in function 'CTLM_settings_main_open'
+	      __CredoTimeLapseMod__/CTLM/gui.lua:98: in function 'click'
+	      __CredoTimeLapseMod__/CTLM/main.lua:83: in function <__CredoTimeLapseMod__/CTLM/main.lua:81>
+		
+		
+		
+	Author: Mediocream aka Maessigcremig	
+	
+	
