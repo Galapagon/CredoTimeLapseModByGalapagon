@@ -153,7 +153,7 @@ function CTLM.gui.CTLM_settings_playerEdit_open(event)
     local height_flow = mainFrame.add({type="flow", name="height_flow", direction="horizontal"});
     height_flow.add({type="label", caption={"settings.playerEdit.height"}});
     local textfield = height_flow.add({type="textfield", name="textfield"});
-    textfield.text=global.players[playerEditIndex].height;
+    textfield.numeric=global.players[playerEditIndex].height;
     textfield.style.minimal_width = 50;
     textfield.style.maximal_width = 50;
     --[end] Main frame -> height setting

@@ -196,7 +196,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     height_flow.style.maximal_width = 750;
     height_flow.add({type="label", caption={"settings.positionEdit.height"}});
     local textfield = height_flow.add({type="textfield", name="textfield"});
-    textfield.text=global.positions[positionKey].height;
+    textfield.numeric=global.positions[positionKey].height;
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> height setting
