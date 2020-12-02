@@ -79,7 +79,7 @@ function CTLM.gui.CTLM_settings_main_open(event)
     local screenshotInterval_flow = mainFrame.add({type="flow", name="screenshotInterval_flow", direction="horizontal"});
     screenshotInterval_flow.add({type="label", caption={"settings.main.screenshotInterval_left"}});
     local textfield = screenshotInterval_flow.add({type="textfield", name="screenshotInterval"});
-    textfield.text=global.config.screenshotInterval;
+    textfield.numeric=global.config.screenshotInterval;
     screenshotInterval_flow.add({type="label", caption={"settings.main.screenshotInterval_right"}});
     --[end] Main frame -> screenshotInterval setting
 
