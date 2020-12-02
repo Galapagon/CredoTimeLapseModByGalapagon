@@ -156,7 +156,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     name_flow.style.maximal_width = 750;
     name_flow.add({type="label", caption={"settings.positionEdit.name"}});
     local textfield = name_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.positions[positionKey].name;
+    textfield.text=global.positions[positionKey].name;
     textfield.style.minimal_width = 250;
     textfield.style.maximal_width = 250;
     --[end] Main frame -> width setting
@@ -167,7 +167,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     surface_flow.style.maximal_width = 750;
     surface_flow.add({type="label", caption={"settings.positionEdit.surface"}});
     local textfield = surface_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.positions[positionKey].surface;
+    textfield.text=global.positions[positionKey].surface;
     textfield.style.minimal_width = 250;
     textfield.style.maximal_width = 250;
     --[end] Main frame -> width setting
