@@ -144,7 +144,7 @@ function CTLM.gui.CTLM_settings_playerEdit_open(event)
     local width_flow = mainFrame.add({type="flow", name="width_flow", direction="horizontal"});
     width_flow.add({type="label", caption={"settings.playerEdit.width"}});
     local textfield = width_flow.add({type="textfield", name="textfield"});
-    textfield.text=global.players[playerEditIndex].width;
+    textfield.numeric=global.players[playerEditIndex].width;
     textfield.style.minimal_width = 50;
     textfield.style.maximal_width = 50;
     --[end] Main frame -> width setting

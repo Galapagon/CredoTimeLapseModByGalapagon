@@ -185,7 +185,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     width_flow.style.maximal_width = 750;
     width_flow.add({type="label", caption={"settings.positionEdit.width"}});
     local textfield = width_flow.add({type="textfield", name="textfield"});
-    textfield.text=global.positions[positionKey].width;
+    textfield.numeric=global.positions[positionKey].width;
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> width setting
