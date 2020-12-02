@@ -162,7 +162,7 @@ function CTLM.gui.CTLM_settings_playerEdit_open(event)
     local zoom_flow = mainFrame.add({type="flow", name="zoom_flow", direction="horizontal"});
     zoom_flow.add({type="label", caption={"settings.playerEdit.zoom"}});
     local textfield = zoom_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.players[playerEditIndex].zoom;
+    textfield.allow_decimal=global.players[playerEditIndex].zoom;
     textfield.style.minimal_width = 50;
     textfield.style.maximal_width = 50;
     --[end] Main frame -> zoom setting

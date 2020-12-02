@@ -24,9 +24,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --Factorio provided libs
 require "util";
 
-MOD_FULLNAME = "CredoTimeLapseModByMaessigcremig";
+MOD_FULLNAME = "CredoTimeLapseModByGalapagon";
 MOD_SHORTNAME = "CTLM";
-MOD_VERSION = "3.0.1";
+MOD_VERSION = "3.1.1";
 
 --CTLM libs
 require "CTLM.main";

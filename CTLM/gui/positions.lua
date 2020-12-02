@@ -207,7 +207,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     zoom_flow.style.maximal_width = 750;
     zoom_flow.add({type="label", caption={"settings.positionEdit.zoom"}});
     local textfield = zoom_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.positions[positionKey].zoom;
+    textfield.allow_decimal=global.positions[positionKey].zoom;
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> zoom setting
