@@ -144,7 +144,7 @@ function CTLM.gui.CTLM_settings_playerEdit_open(event)
     local width_flow = mainFrame.add({type="flow", name="width_flow", direction="horizontal"});
     width_flow.add({type="label", caption={"settings.playerEdit.width"}});
     local textfield = width_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.players[playerEditIndex].width;
+    textfield.text=tostring(global.players[playerEditIndex].width);
     textfield.style.minimal_width = 50;
     textfield.style.maximal_width = 50;
     --[end] Main frame -> width setting
@@ -153,7 +153,7 @@ function CTLM.gui.CTLM_settings_playerEdit_open(event)
     local height_flow = mainFrame.add({type="flow", name="height_flow", direction="horizontal"});
     height_flow.add({type="label", caption={"settings.playerEdit.height"}});
     local textfield = height_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.players[playerEditIndex].height;
+    textfield.text=tostring(global.players[playerEditIndex].height);
     textfield.style.minimal_width = 50;
     textfield.style.maximal_width = 50;
     --[end] Main frame -> height setting
@@ -162,7 +162,7 @@ function CTLM.gui.CTLM_settings_playerEdit_open(event)
     local zoom_flow = mainFrame.add({type="flow", name="zoom_flow", direction="horizontal"});
     zoom_flow.add({type="label", caption={"settings.playerEdit.zoom"}});
     local textfield = zoom_flow.add({type="textfield", name="textfield"});
-    textfield.allow_decimal=global.players[playerEditIndex].zoom;
+    textfield.text=tostring(global.players[playerEditIndex].zoom);
     textfield.style.minimal_width = 50;
     textfield.style.maximal_width = 50;
     --[end] Main frame -> zoom setting

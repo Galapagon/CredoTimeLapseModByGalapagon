@@ -16,7 +16,7 @@ config.defaults.noticesEnabled = false;
 config.defaults.lastPosition = 0;
 
 -- saves to script-output/CTLM/<saveFolder>/
-config.defaults.saveFolder = "temp";
+config.defaults.saveFolder = "Positions";
 
 -- Last number used for a screenshot to prevent overwriting older screenshots.
 config.defaults.screenshotNumber = 0;
