@@ -26,7 +26,7 @@ require "util";
 
 MOD_FULLNAME = "CredoTimeLapseModByGalapagon";
 MOD_SHORTNAME = "CTLM";
-MOD_VERSION = "3.1.1";
+MOD_VERSION = "3.2.1";
 
 --CTLM libs
 require "CTLM.main";
