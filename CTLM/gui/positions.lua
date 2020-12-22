@@ -185,7 +185,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     width_flow.style.maximal_width = 750;
     width_flow.add({type="label", caption={"settings.positionEdit.width"}});
     local textfield = width_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.positions[positionKey].width;
+    textfield.text=tostring(global.positions[positionKey].width);
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> width setting
@@ -196,7 +196,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     height_flow.style.maximal_width = 750;
     height_flow.add({type="label", caption={"settings.positionEdit.height"}});
     local textfield = height_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.positions[positionKey].height;
+    textfield.text=tostring(global.positions[positionKey].height);
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> height setting
@@ -207,7 +207,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     zoom_flow.style.maximal_width = 750;
     zoom_flow.add({type="label", caption={"settings.positionEdit.zoom"}});
     local textfield = zoom_flow.add({type="textfield", name="textfield"});
-    textfield.allow_decimal=global.positions[positionKey].zoom;
+    textfield.text=tostring(global.positions[positionKey].zoom);
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> zoom setting
@@ -218,7 +218,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     positionX_flow.style.maximal_width = 750;
     positionX_flow.add({type="label", caption={"settings.positionEdit.positionX"}});
     local textfield = positionX_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.positions[positionKey].positionX;
+    textfield.text=tostring(global.positions[positionKey].positionX);
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> positionX setting
@@ -229,7 +229,7 @@ function CTLM.gui.CTLM_settings_positionEdit_open(event)
     positionY_flow.style.maximal_width = 750;
     positionY_flow.add({type="label", caption={"settings.positionEdit.positionY"}});
     local textfield = positionY_flow.add({type="textfield", name="textfield"});
-    textfield.numeric=global.positions[positionKey].positionY;
+    textfield.text=tostring(global.positions[positionKey].positionY);
     textfield.style.minimal_width = 75;
     textfield.style.maximal_width = 100;
     --[end] Main frame -> positionY setting
